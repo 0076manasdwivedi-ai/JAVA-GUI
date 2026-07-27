@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.event.*;
 
 public class StudentRegistration extends JFrame implements ActionListener {
+    
     private JLabel headingLabel, nameLabel, ageLabel, branchLabel, rollNoLabel, genderLabel;
     private JTextField nameTextField, ageTextField, branchTextField, rollNoTextField;
     private JRadioButton maleRadioButton, femaleRadioButton;
@@ -10,13 +11,12 @@ public class StudentRegistration extends JFrame implements ActionListener {
     private JButton submitButton, resetButton;
 
     public StudentRegistration() {
+        
         setTitle("Student Registration Form");
         setBounds(300, 90, 420, 430);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setResizable(false);
         setLayout(null);
-
-        setLocationRelativeTo(null);
 
         headingLabel = new JLabel("Student Registration Form");
         headingLabel.setBounds(130, 20, 200, 30);
